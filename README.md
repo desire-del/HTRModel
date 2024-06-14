@@ -38,7 +38,7 @@ Follow these instructions to integrate word beam search decoding:
 ## Train model on RIMES dataset
 
 ### Prepare dataset
-Follow these instructions to get the IAM dataset:
+Follow these instructions to get the RIMES dataset:
 
 * Download [RIMES DATASET](https://drive.google.com/drive/folders/1bhY1qccRPWn6pDI0XV7RZLKWbICQKqwt?usp=sharing)
 
