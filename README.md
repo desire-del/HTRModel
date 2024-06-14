@@ -14,7 +14,7 @@ The model takes **images of text lines  as input** and **outputs the recognized 
 * `--mode`: select between "train", "validate" and "infer". Defaults to "infer".
 * `--decoder`: select from CTC decoders "bestpath", "beamsearch" and "wordbeamsearch". Defaults to "bestpath". For option "wordbeamsearch" see details below.
 * `--batch_size`: batch size.
-* `--data_dir`: directory containing IAM dataset (with subdirectories `img` and `gt`).
+* `--data_dir`: directory containing the dataset.
 * `--img_file`: image that is used for inference.
 * `--dump`: dumps the output of the NN to CSV file(s) saved in the `dump` folder. Can be used as input for the [CTCDecoder](https://github.com/githubharald/CTCDecoder).
 
@@ -49,7 +49,6 @@ Follow these instructions to get the RIMES dataset:
 * The RIMES dataset is split into 95% training data and 5% validation data   
 * Training stops after a fixed number of epochs without improvement
 
-The pretrained word model was trained with this command on a GTX 1050 Ti:
 ```
 python main.py --mode train --data_dir path/to/rimes --batch_size 500 --early_stopping 15
 ```
